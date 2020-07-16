@@ -1,0 +1,27 @@
+<div>
+  <div class="parent-content" >
+    <div class="filter">
+      <div class="filterElm">
+      <select [(ngModel)]="filterElem" class="select">
+        <option *ngFor="let elm of elements" [ngValue]="elm">
+          {{ elm }}
+        </option>
+      </select>
+      </div>
+      <div class="input-text"><input type="text" id="value" name="value" [(ngModel)]="value" 
+        (ngModelChange)="searchUserByFilter($event)" 
+        placeholder="Search..." /></div>
+    </div>
+
+    <div class="users-list">
+       <div class="user-info" *ngFor="let user of allUserProf.Brastlewark" (click)="userProfileById(user.id)" style="border: 1px solid #c5c4c4;">
+         <div class="user-foto" style="border: 1px solid #c5c4c4;">
+           <img [src]="user.thumbnail" alt="No picture">
+        </div>
+         <div class="user-text-info">
+          <div style="margin-top: 8px;">{{user.name}} &nbsp;&nbsp;&nbsp; {{user.age}} años</div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AxaAng"
+    }
+  },
+  "defaultProject": "AxaAng",
+  "cli": {
+    "analytics": "9371f230-37fe-440a-9e42-d3887133ca31"
+  }
 }
