@@ -1,0 +1,18 @@
+
+$break-small: 360px;
+$break-large: 600px;
+
+
+.flex-item {
+    width: 550px;
+  @media screen and (max-width: $break-small) {
+    width: 97%;
+    margin-left: 2%;
+  }
+ @media screen and (min-width: $break-large) {
+     width: 550px;
+     text-align: center;
+     margin: auto;
+   }
+  
+}

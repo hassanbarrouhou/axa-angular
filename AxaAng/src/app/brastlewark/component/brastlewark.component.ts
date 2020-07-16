@@ -50,11 +50,11 @@ export class BrastlewarkComponent implements OnInit {
         this.allUserProf.Brastlewark = res.Brastlewark;
         break;
       case this.elements[2]:
-        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.professions.indexof(value));
+        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.professions.toUpperCase().indexof(value.toUpperCase()));
         this.allUserProf.Brastlewark = res.Brastlewark;
         break;
       case this.elements[3]:
-        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.friends.indexof(value));
+        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.friends.toUpperCase().indexof(value.toUpperCase()));
         this.allUserProf.Brastlewark = res.Brastlewark;
         break;
       default:
