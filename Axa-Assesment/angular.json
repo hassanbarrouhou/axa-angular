@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Axa-Assesment"
+    }
+  },
+  "defaultProject": "Axa-Assesment",
+  "cli": {
+    "analytics": "ed9d677b-4395-4cac-b37f-d726b7605d56"
+  }
 }

@@ -46,7 +46,7 @@ export class BrastlewarkComponent implements OnInit {
         res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.age == parseInt(value));
         break;
       case this.elements[1]:
-        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.name.includes(value));
+        res.Brastlewark = this.allUserProf.Brastlewark.filter(x => x.name.toUpperCase().includes(value.toUpperCase()));
         this.allUserProf.Brastlewark = res.Brastlewark;
         break;
       case this.elements[2]:
